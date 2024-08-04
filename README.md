@@ -1,6 +1,8 @@
 # learningsweet
 Send highlighted text into Anki as auto-generated flashcards
 
+See [HERE](https://nickcdryan.com/2024/08/04/automated-anki-take-any-highlighted-text-convert-it-to-flashcards-and-send-it-to-an-anki-deck-with-one-keyboard-stroke/) for a demo
+
 ## Setup
 
 ### Script
