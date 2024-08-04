@@ -15,3 +15,8 @@ Create a quick action in Automator
 Add a keyboard shortcut in System Preferences
 (make sure automator has accessibility permissions)
 <img width="662" alt="image" src="https://github.com/user-attachments/assets/afaefa07-09be-4a61-b217-4d6e771daa77">
+
+## Other
+- Tweak the flashcard prompt to your taste
+- Change the deck name if you like
+- You can duplicate this setup to have different keyboard shortcuts route text to different decks, e.g. "work" "language" "miscellaneous"
