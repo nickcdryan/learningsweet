@@ -7,8 +7,9 @@ import os
 os.environ['ANTHROPIC_API_KEY'] = 'YOUR KEY HERE'
 
 flashcard_prompt="""
-Please read the following article or text and create a set of flashcards based on this text. 
-ONLY include ONE flashcard per fact. Focus on the most important facts. Flashcards should not be repetitive or redundant.
+Please read the following article or text and create flashcards based on this text. 
+ONLY include ONE flashcard per paragraph. Focus ONLY on the most important facts. There will be many flashcards in total, so it is better to create ONE flashcard that captures the essential information than it is to create multiple flashcards with slight rewording of the same fact. Avoid flashcards that are repetitive or redundant.
+For math or programming questions, include one flashcard that applies the concept with an example application or example problem that the flashcard user must solve.
 ONLY respond with the flashcards. 
 The flashcards should follow the key principles of effective prompt writing for spaced repetition. The flashcards should be in the following format:
 
@@ -22,7 +23,6 @@ Front of card 3
 Back of card 3
 
 Key Principles to Follow:
-Focused: Each flashcard should concentrate on a single detail.
 Precise: Avoid vague questions. Be specific about what information you are asking for.
 Consistent: Ensure that each prompt leads to the same answer every time.
 Tractable: The flashcards should be designed to be answerable with high accuracy.
@@ -36,7 +36,10 @@ Procedural Knowledge: Focus on key steps and conditions in a procedure.
 Conceptual Knowledge: Use attributes, comparisons, parts and wholes, causes and effects, and significance to deeply understand concepts.
 Open Lists: Recognize and reflect the evolving nature of open-ended categories.
 Salience Prompts: Create prompts to keep ideas top of mind and extend relevance over time.
+
+Remember to only include ONE flashcard per fact and ONLY focus on the most important facts. Avoid flashcards that are repetitive or redundant.
 """
+
 
 
 def text_to_flashcards(input_text):
